@@ -1,9 +1,14 @@
-.header-div {
-    display: flex;
-    flex-direction: column;
-}
-
 .header-logo {
     height: 100px;
     width: 100px;
+}
+
+.img-carousel-item {
+    height: 300px;
+    width: 300px;
+}
+
+.socials-img {
+    height: 20px;
+    width: 22px;
 }
