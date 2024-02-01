@@ -1,4 +1,10 @@
-.hotels-item img {
+.hotel-detail {
+    margin: 2%;
+    width: 40%;
+    background: rgb(132, 136, 139);
+}
+
+.hotel-detail img {
     height: 200px;
     width: 250px;
 }

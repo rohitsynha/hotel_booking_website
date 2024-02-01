@@ -8,12 +8,14 @@
 </head>
 <body>
     <div id="root">
-        <header class="header-div">
+        <header>
             <img class="header-logo" src="./assests/images/logo.png", alt="logo">
             <a href="./login.html">Login</a>
         </header>
         <div>
-            <input class="city-input" placeholder="City">
+            <form class="city-search-form" action="./index.html">
+                <input type="text" id="city" name="city" required placeholder="City">
+            </form>
             <div class="img-carousel">
                 <a href="./list.html">
                     <img class="img-carousel-item" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="cityImg">

@@ -1,4 +1,26 @@
 .booking-details img {
     height: 500px;
     width: 500px;
+    display: flex;
+}
+
+.hotel-description {
+    background: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-info {
+    margin: 2% 2%;
+}
+
+.tariff-details {
+    margin: 2% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
 }
