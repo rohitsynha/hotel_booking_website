@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="root">
         <header>
             <img class="header-logo" src="./assests/images/logo.png", alt="logo">
-            <a href="./login.html">Login</a>
+            <a class="login-link" href="./login.html">Login</a>
         </header>
-        <div>
+        <div class="body-content">
             <form class="city-search-form" action="./index.html">
                 <input type="text" id="city" name="city" required placeholder="City">
             </form>
@@ -30,10 +34,10 @@
                     <img class="img-carousel-item" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="cityImg">
                 </a>
             </div>
-            <a href="#">View more >></a>
+            <a class="view-more-link" href="#">View more >></a>
         </div>
         <footer>
-            <a href="./contact.html">Contact Us</a>
+            <a class="contact-link" href="./contact.html">Contact Us</a>
             <div class="socials">
                 <a href="https://www.facebook.com" target="_blank">
                     <img class="socials-img" src="./assests/images/facebook.png" alt="facebook">
@@ -45,7 +49,7 @@
                     <img class="socials-img" src="./assests/images/twitter.png" alt="twitter">
                 </a>
             </div>
-            &#xa9; 2020 ROOM SEARCH PVT. LTD.
+            <text class="copyright-text">&#xa9; 2020 ROOM SEARCH PVT. LTD.</text>
         </footer>
     </div>
 </body>

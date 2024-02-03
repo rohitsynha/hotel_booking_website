@@ -1,3 +1,7 @@
+html, body {
+    background-color: #e0e0e0;
+}
+
 .booking-details img {
     height: 500px;
     width: 500px;

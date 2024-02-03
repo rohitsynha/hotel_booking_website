@@ -1,3 +1,7 @@
+html, body {
+    background-color: #e0e0e0;
+}
+
 form {
     margin-left: 4%;
     margin-right: 4%;
@@ -12,7 +16,7 @@ form {
     margin-right: 4%;
 }
 
-.hotel-description {
+.hotel-info {
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 1%;

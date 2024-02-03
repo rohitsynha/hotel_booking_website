@@ -1,3 +1,10 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu',sans-serif;
+}
+
 .loader {
     height: 70px;
     width: 70px;

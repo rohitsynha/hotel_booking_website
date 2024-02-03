@@ -1,25 +1,26 @@
 html, body {
-    margin: 0;
-    height: 100%;
     background-color: #e0e0e0;
 }
 
-header {
-    background-color: rosybrown;
+.city-search-form {
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
 }
 
-footer {
-    background-color: rosybrown;
-}
-
-#root {
-    margin: 0;
-    height: 100%;
-}
-
-.header-logo {
-    height: 60px;
-    width: 60px;
+#city {
+    position: relative;
+    left: 36%;
+    top: 50%;
+    border: 1px transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 28%;
 }
 
 .img-carousel {
@@ -36,15 +37,7 @@ footer {
     border-radius: 25%;
 }
 
-.socials-img {
-    height: 20px;
-    width: 22px;
-}
-
-.city-search-form {
-    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
+.view-more-link {
+    left: 50%;
+    text-align: center;
 }
