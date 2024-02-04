@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="root">
@@ -19,61 +19,70 @@
             <a class="login-link" href="./login.html">Login</a>
         </header>
         <div class="body-content">
-            <div class="hotel-details">
-                <div class="hotel-img">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotelImg">
+            <div class="booking-form-info-container">
+                <div class="hotel-img-container">
+                    <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotelImg">
                 </div>
-                <div class="booking-form">
-                    <form action="./payment.html">
-                        <label for="adults">Adults:</label>
-                        <input type="number" id="adults" name="adults" min="1" required>
-                        <br>
-                        <label for="name">Name:</label>
-                        <input type="text" id="password" name="password" required>
-                        <br>
-                        <label for="fromDate">From Date:</label>
-                        <input type="date" id="fromDate" name="fromDate" required>
-                        <br>
-                        <label for="toDate">To Date:</label>
-                        <input type="date" id="toDate" name="toDate" required>
-                        <br>
-                        <label for="total">Total:</label>
-                        <input type="text" id="total" name="total" readonly>
-                        <br>
-                        <input type="submit" value="Book Now">
+                <div class="booking-form-container">
+                    <form class="booking-form" action="./payment.html">
+                        <div class="booking-form-items">
+                            <label class="form-label" for="adults">Adults:</label>
+                            <input class="form-input" type="number" id="adults" name="adults" min="1" required>
+
+                            <label class="form-label" for="name">Name:</label>
+                            <input class="form-input" type="text" id="name" name="name" required>
+                
+                            <label class="form-label" for="fromDate">From Date:</label>
+                            <input class="form-input" type="date" id="fromDate" name="fromDate" required>
+                      
+                            <label class="form-label" for="toDate">To Date:</label>
+                            <input class="form-input" type="date" id="toDate" name="toDate" required>
+                   
+                            <label class="form-label" for="total">Total:</label>
+                            <input class="form-input" type="text" id="total" name="total" readonly>
+               
+                            <label></label>
+                            <input class="form-submit" type="submit" value="Book Now">
+                        </div>
                     </form>
                 </div>
-                <div class="hotel-info">
-                    <h2>Radisson Blu Hotel</h2>
-                    <div class="hotel-rating">
-                        RATING
-                        <br>
-                        <br>
-                        5 Star
-                        <br>
-                        <br>
+            </div>
+            <div class="hotel-info">
+                <div class="hotel-info-item hotel-name-container">
+                    <h2 class="hotel-name">Radisson Blu Hotel</h2>
+                </div>
+                <div class="hotel-info-item hotel-rating-container">
+                    <div class="hotel-rating-title-container">
+                        <text class="hotel-info-item-title hotel-rating-title">RATING</text>
                     </div>
-                    <div class="hotel-amenities">
-                        AMENITIES
-                        <ul>
-                            <li>Room service</li>
-                            <li>Restaurant</li>
-                            <li>Business center</li>
-                            <li>Fitness center</li>
-                            <li>Pool</li>
-                        </ul>
+                    <text class="hotel-rating">5 Star</text>
+                </div>
+                <div class="hotel-info-item hotel-amenities-container">
+                    <div class="hotel-amenities-title-container">
+                        <text class="hotel-info-item-title hotel-amenities-title">AMENITIES</text>
                     </div>
-                    <div class="hotel-description">
-                        DESCRIPTION
-                        <br>
-                        <br>
+                    <ul class="hotel-amenities-list">
+                        <li class="hotel-amenities-list-item">Room service</li>
+                        <li class="hotel-amenities-list-item">Restaurant</li>
+                        <li class="hotel-amenities-list-item">Business center</li>
+                        <li class="hotel-amenities-list-item">Fitness center</li>
+                        <li class="hotel-amenities-list-item">Pool</li>
+                    </ul>
+                </div>
+                <div class="hotel-info-item hotel-description-container">
+                    <div class="hotel-description-title-container">
+                        <text class="hotel-info-item-title hotel-description-title">DESCRIPTION</text>
+                    </div>
+                    <text class="hotel-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi similique excepturi autem corrupti iste expedita adipisci qui commodi, doloremque magni cum consectetur hic est officiis doloribus dolorum quae. Omnis?
-                    </div>
+                    </text>
                 </div>
             </div>
         </div>
         <footer>
-            <a class="contact-link" href="./contact.html">Contact Us</a>
+            <div class="contact-link">
+                <a href="./contact.html">Contact Us</a>
+            </div>
             <div class="socials">
                 <a href="https://www.facebook.com" target="_blank">
                     <img class="socials-img" src="./assests/images/facebook.png" alt="facebook">
@@ -85,7 +94,9 @@
                     <img class="socials-img" src="./assests/images/twitter.png" alt="twitter">
                 </a>
             </div>
-            <text class="copyright-text">&#xa9; 2020 ROOM SEARCH PVT. LTD.</text>
+            <div class="copyright-text">
+                <text>&#xa9; 2020 ROOM SEARCH PVT. LTD.</text>
+            </div>
         </footer>
     </div>
 </body>

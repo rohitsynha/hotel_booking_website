@@ -36,7 +36,7 @@ header {
 .login-link {
     position: absolute;
     top: 34%;
-    right: 1%;
+    right: 2%;
 }
 
 footer {
@@ -53,12 +53,12 @@ footer {
 .contact-link {
     position: absolute;
     top: 30%;
-    left: 1%;
+    left: 2%;
 }
 
 .socials {
     position: absolute;
-    right: 1%;
+    right: 2%;
     top: 30%
 }
 
@@ -69,8 +69,9 @@ footer {
 
 .copyright-text {
     position: absolute;
-    bottom: 1%;
-    left: 45%;
+    top: 30%;
+    left: 43%;
+    font-size: small;
 }
 
 a {

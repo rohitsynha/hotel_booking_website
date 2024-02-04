@@ -21,23 +21,64 @@ html, body {
     border-radius: 12px;
     font-size: 16px;
     width: 28%;
+    outline: none;
 }
 
 .img-carousel {
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3% 8% 3% 11%;
 }
 
 .img-carousel-item {
-    margin: auto;
+    flex-basis: 25%;
+    position: relative;
+    left: 4%;
+}
+
+
+.img-carousel-img-container {
     height: 150px;
     width: 150px;
-    padding: 4%;
     border-radius: 25%;
+    opacity: 1;
+    display: block;
+    backface-visibility: hidden;
+    background-color: black;
+}
+
+.img-carousel-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.img-carousel-item:hover .img-carousel-img {
+    opacity: 0.3;
+}
+
+.city-name-container {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-carousel-item:hover .city-name-container {
+    opacity: 1;
+}
+
+.city-name {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .view-more-link {
-    left: 50%;
     text-align: center;
 }

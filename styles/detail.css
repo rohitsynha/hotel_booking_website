@@ -2,23 +2,66 @@ html, body {
     background-color: #e0e0e0;
 }
 
-form {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
+.booking-form-info-container {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 2% 0%;
+    border: 1px solid black;
 }
 
-.hotel-details img {
+.hotel-img-container {
+    padding: 2% 2% 2% 12%;
+    width: 50%;
+}
+
+.hotel-img {
+    width: 80%;
     height: 500px;
-    width: 500px;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
+}
+
+.booking-form-container {
+    width: 30%;
+    border-left: 1px solid black;
+    padding: 2%;
+}
+
+.booking-form-items {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20%;
+    padding: 10px;
+}
+
+ label, input {
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    text-align:left;
+}
+
+.form-submit {
+    font-size: medium;
+    width: 40%;
+    text-align: center;
 }
 
 .hotel-info {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    margin: 0% 2%;
+}
+
+.hotel-info-item {
+    padding: 10px;
+}
+
+.hotel-info-item-title {
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.hotel-rating-title-container {
+    margin-bottom: 10px;
+}
+
+.hotel-description-title-container {
+    margin-bottom: 10px;
 }

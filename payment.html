@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/payment.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="root">
@@ -19,38 +19,60 @@
             <a class="login-link" href="./login.html">Login</a>
         </header>
         <div class="body-content">
+            <div class="hotel-description">
+                <div class="hotel-description-img-container">
+                    <img class="hotel-description-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotelImg">
+                </div>
+                <div class="hotel-info">
+                    <div class="hotel-info-item hotel-name-container">
+                        <h2 class="hotel-name">Radisson Blu Hotel</h2>
+                    </div>
+                    <div class="hotel-info-item hotel-ranking-container">
+                        <text class="hotel-ranking">#38 of 1,289 hotels in New Delhi</text>
+                    </div>
+                    <div class="hotel-info-item hotel-address-container">
+                        <text class="hotel-address">National Highway 8, New Delhi 110017 India</text>
+                    </div>
+                </div>
+            </div>
             <div class="booking-details">
-                <div class="hotel-description">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotelImg">
-                    <h2>Radisson Blu Hotel</h2>
-                    #38 of 1,289 hotels in New Delhi
-                    <br>
-                    <br>
-                    National Highway 8, New Delhi 110017 India
+                <div id="booking-info" class="booking-details-item">
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Name:</text>
+                        <text>John Doe</text>
+                    </div>
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Number of Adults:</text>
+                        <text>2</text>
+                    </div>
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Check-in Date:</text>
+                        <text>06/06/2020</text>
+                    </div>
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Check-out Date:</text>
+                        <text>08/06/2020</text>
+                    </div>
                 </div>
-                <div class="booking-info">
-                    <b>Name:</b> John Doe
-                    <br>
-                    <br>
-                    <b>Number of Adults:</b> 2
-                    <br>
-                    <br>
-                    <b>Check-in Date:</b> 06/06/2020
-                    <br>
-                    <br>
-                    <b>Check-out Date:</b> 08/06/2020
+                <div id="tariff-details" class="booking-details-item">
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Tariff Breakdown:</text>
+                        <text>Rs.1000 x 2 Adults x 5 Nights</text>
+                    </div>
+                    <div class="booking-details-item-row">
+                        <text class="booking-info-title">Total Amount:</text>
+                        <text>Rs.10000</text>
+                    </div>
                 </div>
-                <div class="tariff-details">
-                    <b>Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights
-                    <br>
-                    <br>
-                    <b>Total Amount:</b> Rs.10000
+                <div id="pay-now" class="booking-details-item">
+                    <a href="#">Pay Now</a>
                 </div>
-                <a href="#">Pay Now</a>
             </div>
         </div>
         <footer>
-            <a class="contact-link" href="./contact.html">Contact Us</a>
+            <div class="contact-link">
+                <a href="./contact.html">Contact Us</a>
+            </div>
             <div class="socials">
                 <a href="https://www.facebook.com" target="_blank">
                     <img class="socials-img" src="./assests/images/facebook.png" alt="facebook">
@@ -62,7 +84,9 @@
                     <img class="socials-img" src="./assests/images/twitter.png" alt="twitter">
                 </a>
             </div>
-            <text class="copyright-text">&#xa9; 2020 ROOM SEARCH PVT. LTD.</text>
+            <div class="copyright-text">
+                <text>&#xa9; 2020 ROOM SEARCH PVT. LTD.</text>
+            </div>
         </footer>
     </div>
 </body>

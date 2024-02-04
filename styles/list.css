@@ -4,13 +4,26 @@ html, body {
 
 .hotel-detail {
     margin: 5%;
-    background: rgb(132, 136, 139);
+    background: lightgrey;
     height: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.hotel-detail img {
+.hotel-img {
+    flex-basis: 30%;
     height: 200px;
     width: 250px;
+}
+
+.hotel-info {
+    flex-basis: 50%;
+    padding: 0px 0px 0px 20px;
+}
+
+.hotel-city-container {
+    margin-top: 15px;
 }
 
 .views-list-container {
@@ -43,6 +56,7 @@ ul {
 
 .list-view-item {
     flex-basis: 50%;
+    height: 238px;
 }
 
 #map-view {
