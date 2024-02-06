@@ -4,39 +4,74 @@ html, body, #root {
     font-family: 'Ubuntu',sans-serif;
 }
 
+a {
+    all: unset
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 #root {
     width: 100%;
     padding: 0%;
+    display: flex;
 }
 
 .body-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 3% 0% 5% 0%;
+    margin: 4% auto 3%;
+    overflow: auto;
 }
 
 header {
     top: 0;
     width: 100%;
+    height: 6%;
     background-color: rosybrown;
     display: flex;
-    flex-direction: row;
     position: fixed;
     z-index: 1;
+}
+
+.header-img {
+    margin: auto auto auto 1%;
 }
 
 .header-logo {
     height: 60px;
     width: 60px;
-    top: 2%;
-    left: 1%;
 }
 
-.login-link {
-    position: absolute;
-    top: 34%;
-    right: 2%;
+#login-button-container {
+    margin: auto 1% auto auto;
+}
+
+#modal-login-button-container {
+    margin: auto;
+}
+
+#login-form-items {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.login-form-item {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-form-item label {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.login-form-item input {
+    width: 50%;
 }
 
 footer {
@@ -50,16 +85,20 @@ footer {
     z-index: 1;
 }
 
-.contact-link {
-    position: absolute;
-    top: 30%;
-    left: 2%;
+#contact-button-container {
+    margin: auto auto auto 1%;
+}
+
+.contact-us-form-item {
+    margin: 5% 0%;
+}
+
+.contact-us-form-item input {
+    width: 50%;
 }
 
 .socials {
-    position: absolute;
-    right: 2%;
-    top: 30%
+    margin: auto 2% auto auto;
 }
 
 .socials-img {
@@ -68,16 +107,6 @@ footer {
 }
 
 .copyright-text {
-    position: absolute;
-    top: 30%;
-    left: 43%;
+    margin: auto;
     font-size: small;
-}
-
-a {
-    all: unset
-}
-
-a:hover {
-    cursor: pointer;
 }

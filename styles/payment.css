@@ -4,14 +4,13 @@ html, body {
 
 .hotel-description {
     background: rgb(132,136,139);
-    height: 20%;
     width: 50%;
-    margin: 10% auto 2% auto;
+    margin: 5% auto;
     display: flex;
 }
 
 .hotel-description-img {
-    max-height: 300px;
+    max-height: 250px;
     max-width: 270px;
 }
 
@@ -20,7 +19,7 @@ html, body {
 }
 
 .hotel-info-item {
-    margin: 5%;
+    margin-top: 5%;
 }
 
 .booking-details {

@@ -28,14 +28,12 @@ html, body {
 
 .views-list-container {
     display: flex;
-    margin-bottom: 2%;
 }
 
 .views-list {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 42%;
+    margin: auto;
 }
 
 .views-list-item {
@@ -61,4 +59,8 @@ ul {
 
 #map-view {
     display: none;
+}
+
+.selected {
+    background-color: blue;
 }
