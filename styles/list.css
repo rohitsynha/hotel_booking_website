@@ -11,6 +11,10 @@ html, body {
     flex-wrap: wrap;
 }
 
+.hotel-detail:hover {
+    background: rosybrown;
+}
+
 .hotel-img {
     flex-basis: 30%;
     height: 200px;
@@ -63,4 +67,12 @@ ul {
 
 .selected {
     background-color: blue;
+}
+
+.checked-star {
+    color: orange;
+}
+
+.unchecked-star {
+    color: orange;
 }

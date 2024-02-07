@@ -29,7 +29,7 @@ a:hover {
 header {
     top: 0;
     width: 100%;
-    height: 6%;
+    height:60px;
     background-color: rosybrown;
     display: flex;
     position: fixed;
